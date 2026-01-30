@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-black {
+  color: #282828;
+}
+
+.background-black {
+  background: #282828;
+}
+
+.font-white {
+  color: #fff;
+}
+
+.background-white {
+  background: #fff;
+}
+
+.font-red {
+  color: #aa0607;
+}
+
+.background-red {
+  background: #aa0607;
+}
+
+.font-gray {
+  color: #828282;
+}
+
+.background-gray {
+  background: #828282;
+}
+
+.font-darkprimary {
+  color: #ff9203;
+}
+
+.background-darkprimary {
+  background: #ff9203;
+}
+
+.font-primary {
+  color: #ea9625;
+}
+
+.background-primary {
+  background: #ea9625;
+}
+
+.font-lightprimary {
+  color: #fae0b4;
+}
+
+.background-lightprimary {
+  background: #fae0b4;
+}
+
+.font-secondary {
+  color: #8fd9fb;
+}
+
+.background-secondary {
+  background: #8fd9fb;
+}
+
+.font-lightsecondary {
+  color: #b1e4fc;
+}
+
+.background-lightsecondary {
+  background: #b1e4fc;
+}
+
+.font-darksecondary {
+  color: #0084c1;
+}
+
+.background-darksecondary {
+  background: #0084c1;
+}
+
+.font-lightgray {
+  color: #e7eefa;
+}
+
+.background-lightgray {
+  background: #e7eefa;
+}
+
+.font-lightgradient {
+  color: linear-gradient(270deg, #e9defa 0%, rgba(251, 252, 219, 0.5) 100%);
+}
+
+.background-lightgradient {
+  background: linear-gradient(270deg, #e9defa 0%, rgba(251, 252, 219, 0.5) 100%);
+}
+
+.font-darkblue {
+  color: #000048;
+}
+
+.background-darkblue {
+  background: #000048;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 15px;
+  background: #fff;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  line-height: 160%;
+  color: black;
+}
+
+.custom-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.default-btn, .blue-btn, .primary-btn {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px 15px;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.primary-btn {
+  background: #ea9625;
+  color: #fff;
+}
+.primary-btn:hover {
+  background: rgb(223.9288702929, 137.6443514644, 21.5711297071);
+}
+
+.blue-btn {
+  background: linear-gradient(0deg, #0060c5 -3.64%, #3598ff 100%);
+  color: #fff;
+}
+.blue-btn:hover {
+  background: linear-gradient(0deg, #004c9d -3.64%, #3598ff 100%);
+}
+
+.fixed-top-nav {
+  background: #fff;
+}
+.fixed-top-nav .navbar-brand img {
+  width: 180px;
+}
+@media (max-width: 768px) {
+  .fixed-top-nav .navbar-brand img {
+    width: 150px;
+  }
+}
+
+header .navbar-brand img {
+  width: 193px;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+@media (max-width: 768px) {
+  header .navbar-brand img {
+    width: 150px;
+  }
+}
+@media (max-width: 996px) {
+  header .nav-item {
+    margin-bottom: 10px;
+  }
+}
+header .nav-item .nav-link {
+  padding: 0.5rem 1rem !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #282828;
+  font-size: 0.9rem;
+}
+header .nav-item .nav-link:hover {
+  color: #ea9625;
+}
+@media (max-width: 996px) {
+  header .nav-item .nav-link {
+    background: #eee;
+    padding: 14px 15px !important;
+  }
+}
+header .nav-item .active-nav {
+  display: block;
+  padding: 0.5rem 1rem !important;
+  color: #ea9625;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+@media (max-width: 996px) {
+  header .nav-item .active-nav {
+    background: #ea9625;
+    padding: 14px 15px !important;
+    color: #fff;
+  }
+}
+header .whatsappicon img {
+  width: 45px;
+}
+header .offcanvas-title img {
+  width: 250px;
+}
+
+main {
+  margin-top: 60px;
+}
+@media (max-width: 996px) {
+  main {
+    margin-top: 52px;
+  }
+}/*# sourceMappingURL=style.css.map */

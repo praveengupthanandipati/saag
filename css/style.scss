@@ -1,0 +1,147 @@
+@import "mixins";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+  @include siteMain;
+ font-family: "Instrument Sans", sans-serif; 
+  font-size: $fsize;
+  background: map-get($colors, white);
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  line-height: 160%;
+  color: darken(map-get($colors, darkblue), 20%);
+}
+
+.custom-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.default-btn {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px 15px;
+  @include transition(all, 0.2s ease);
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: map-get($font-weights, medium);
+}
+
+.primary-btn {
+  background: map-get($colors, primary);
+  color: map-get($colors, white);
+  @extend .default-btn;
+
+  &:hover {
+    background: darken(map-get($colors, primary), 5%);
+  }
+}
+
+.blue-btn {
+  background: linear-gradient(0deg, #0060c5 -3.64%, #3598ff 100%);
+  color: map-get($colors, white);
+  @extend .default-btn;
+
+  &:hover {
+    background: linear-gradient(0deg, #004c9d -3.64%, #3598ff 100%);
+  }
+}
+
+.fixed-top-nav {
+  background: map-get($colors, white);
+  .navbar-brand {
+    img {
+      width: 180px;
+
+      @include max(map-get($breakpoints, md)) {
+        width:150px;
+      }
+    }
+  }
+}
+
+header {
+  // background: map-get($colors, white);
+  // @include box-shadow(0px, 4px 4px rgba(0, 0, 0, 0.15));
+
+  .navbar-brand {
+    img {
+      width: 193px;
+      @include transition(all 0.2s ease);
+
+      @include max(map-get($breakpoints, md)) {
+        width:150px;
+      }
+    }
+  }
+
+  .nav-item {
+    @include max(map-get($breakpoints, "lg")){
+      margin-bottom:10px;
+    }
+    .nav-link {
+      padding: 0.5rem 1rem !important;
+      font-weight: map-get($font-weights, medium);
+      text-transform: uppercase;
+      color: map-get($colors, black);
+      font-size: 0.9rem;
+
+      &:hover {
+        color: map-get($colors, primary);
+      }
+
+      @include max(map-get($breakpoints, "lg")){
+        background:#eee;
+        padding:14px 15px!important;
+      }
+    }
+    .active-nav {
+      display: block;
+      padding: 0.5rem 1rem !important;
+      color: map-get($colors, primary);
+      text-transform: uppercase;
+      font-weight: map-get($font-weights, medium);
+      font-size: 0.9rem;
+
+      @include max(map-get($breakpoints, "lg")){
+        background:map-get($colors, primary);
+        padding:14px 15px!important;
+        color: map-get($colors, white);
+      }
+    }
+  }
+  .whatsappicon {
+    img {
+      width: 45px;
+    }
+  }
+  .offcanvas-title {
+    img {
+      width: 250px;
+    }
+  }
+}
+
+main {
+  margin-top: 60px;
+
+  @include max(map-get($breakpoints, "lg")){
+    margin-top:52px;
+  }
+
+}
+
