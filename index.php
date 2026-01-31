@@ -48,26 +48,31 @@
                         </li>
                         <li class="nav-item">
                             <a class="<?= isActive('about.php', $current_page) ?>" href="about.php">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="<?= isActive('services.php', $current_page) ?>" href="services.php">Services</a>
-                        </li>
+                        </li>                       
                          <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown
+                                Services
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Short-Term Courses</a></li>
+                                <li><a class="dropdown-item" href="#">Long-Term Courses</a></li>
+                                <li><a class="dropdown-item" href="#">Career Counselling</a></li>
+                                <li><a class="dropdown-item" href="#">Entrance Preparation</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="<?= isActive('payment-methods.php', $current_page) ?>" href="payment-methods.php">Production</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Production
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Print Media</a></li>
+                                <li><a class="dropdown-item" href="#">VFX</a></li>
+                                <li><a class="dropdown-item" href="#">Advertising & Digital Marketing</a></li>
+                                <li><a class="dropdown-item" href="#">Rental Desk & Creative Workspace</a></li>
+                                <li><a class="dropdown-item" href="#">Green Matte Studio & Dubbing Room</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="<?= isActive('contact.php', $current_page) ?>" href="contact.php">Careers</a>
@@ -75,8 +80,18 @@
                          <li class="nav-item">
                             <a class="<?= isActive('contact.php', $current_page) ?>" href="contact.php">Admissions</a>
                         </li>
-                         <li class="nav-item">
-                            <a class="<?= isActive('contact.php', $current_page) ?>" href="contact.php">Courses</a>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Photography</a></li>
+                                <li><a class="dropdown-item" href="#">Videography & Editing</a></li>
+                                <li><a class="dropdown-item" href="#">Smartphone Cinematography</a></li>
+                                <li><a class="dropdown-item" href="#"> Content Creation</a></li>
+                                <li><a class="dropdown-item" href="#">Dubbing & Voice Recording</a></li>                                
+                            </ul>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">

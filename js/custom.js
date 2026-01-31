@@ -1,16 +1,16 @@
-// Dropdown slide animation for navbar (desktop only)
+
+// Only handle mobile: remove styles on resize to mobile
 $(function () {
-  if (window.innerWidth > 991) {
-    $(".navbar-nav .dropdown").hover(
-      function () {
-        $(this).find('.dropdown-menu').stop(true, true).slideDown(250);
-      },
-      function () {
-        $(this).find('.dropdown-menu').stop(true, true).slideUp(200);
-      }
-    );
+  function handleDropdownMobile() {
+    if (window.innerWidth <= 991) {
+      $(".navbar-nav .dropdown").off('mouseenter mouseleave');
+      $(".navbar-nav .dropdown-menu").removeAttr('style');
+    }
   }
+  handleDropdownMobile();
+  $(window).on('resize', handleDropdownMobile);
 });
+
 //header add class
 $(window).scroll(function () {
   if ($(this).scrollTop() > 70) {

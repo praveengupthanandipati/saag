@@ -1,10 +1,48 @@
 @import "mixins";
 @import "variables";
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+// Desktop dropdown hover fix
+@media (min-width: 992px) {
+  header {
+    .navbar-nav {
+      .dropdown {
+        position: relative;
+        &:hover > .dropdown-menu {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+        .dropdown-menu {
+          display: block;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(10px);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          min-width: 200px;
+          border: none;
+          box-shadow: 0 8px 24px rgba(40, 40, 40, 0.08);
+
+          .dropdown-item {
+            padding: 10px 15px;
+            font-size: 1rem;
+            @include transition(all, 0.2s ease);
+
+            &:hover {
+              background: lighten(map-get($colors, darksecondary), 10%);
+              color: map-get($colors, white);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 body {
   @include siteMain;
- font-family: "Instrument Sans", sans-serif; 
+  font-family: "Instrument Sans", sans-serif;
   font-size: $fsize;
   background: map-get($colors, white);
 }
@@ -68,7 +106,7 @@ p {
       width: 180px;
 
       @include max(map-get($breakpoints, md)) {
-        width:150px;
+        width: 150px;
       }
     }
   }
@@ -84,14 +122,14 @@ header {
       @include transition(all 0.2s ease);
 
       @include max(map-get($breakpoints, md)) {
-        width:150px;
+        width: 150px;
       }
     }
   }
 
   .nav-item {
-    @include max(map-get($breakpoints, "lg")){
-      margin-bottom:10px;
+    @include max(map-get($breakpoints, "lg")) {
+      margin-bottom: 10px;
     }
     .nav-link {
       padding: 0.5rem 1rem !important;
@@ -104,9 +142,9 @@ header {
         color: map-get($colors, primary);
       }
 
-      @include max(map-get($breakpoints, "lg")){
-        background:#eee;
-        padding:14px 15px!important;
+      @include max(map-get($breakpoints, "lg")) {
+        background: #eee;
+        padding: 14px 15px !important;
       }
     }
     .active-nav {
@@ -117,9 +155,9 @@ header {
       font-weight: map-get($font-weights, medium);
       font-size: 0.9rem;
 
-      @include max(map-get($breakpoints, "lg")){
-        background:map-get($colors, primary);
-        padding:14px 15px!important;
+      @include max(map-get($breakpoints, "lg")) {
+        background: map-get($colors, primary);
+        padding: 14px 15px !important;
         color: map-get($colors, white);
       }
     }
@@ -134,14 +172,52 @@ header {
       width: 250px;
     }
   }
+  // Navbar dropdown hover for desktop
+  @media (min-width: 992px) {
+    header {
+      .navbar-nav {
+        .dropdown {
+          position: relative;
+          &:hover > .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+          .dropdown-menu {
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            min-width: 200px;
+            border: none;
+            box-shadow: 0 8px 24px rgba(40, 40, 40, 0.08);
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 991.98px) {
+    header {
+      .navbar-nav {
+        .dropdown-menu {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+          transform: none;
+          position: static;
+          box-shadow: none;
+        }
+      }
+    }
+  }
 }
 
 main {
   margin-top: 60px;
 
-  @include max(map-get($breakpoints, "lg")){
-    margin-top:52px;
+  @include max(map-get($breakpoints, "lg")) {
+    margin-top: 52px;
   }
-
 }
-

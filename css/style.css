@@ -60,51 +60,51 @@
 }
 
 .font-darkprimary {
-  color: #ff9203;
+  color: #380100;
 }
 
 .background-darkprimary {
-  background: #ff9203;
+  background: #380100;
 }
 
 .font-primary {
-  color: #ea9625;
+  color: #460100;
 }
 
 .background-primary {
-  background: #ea9625;
+  background: #460100;
 }
 
 .font-lightprimary {
-  color: #fae0b4;
+  color: #831c1a;
 }
 
 .background-lightprimary {
-  background: #fae0b4;
+  background: #831c1a;
 }
 
 .font-secondary {
-  color: #8fd9fb;
+  color: #EB7533;
 }
 
 .background-secondary {
-  background: #8fd9fb;
+  background: #EB7533;
 }
 
 .font-lightsecondary {
-  color: #b1e4fc;
+  color: #f0945e;
 }
 
 .background-lightsecondary {
-  background: #b1e4fc;
+  background: #f0945e;
 }
 
 .font-darksecondary {
-  color: #0084c1;
+  color: #c44800;
 }
 
 .background-darksecondary {
-  background: #0084c1;
+  background: #c44800;
 }
 
 .font-lightgray {
@@ -116,11 +116,11 @@
 }
 
 .font-lightgradient {
-  color: linear-gradient(270deg, #e9defa 0%, rgba(251, 252, 219, 0.5) 100%);
+  color: linear-gradient(270deg, #E9DEFA 0%, rgba(251, 252, 219, 0.8) 100%);
 }
 
 .background-lightgradient {
-  background: linear-gradient(270deg, #e9defa 0%, rgba(251, 252, 219, 0.5) 100%);
+  background: linear-gradient(270deg, #E9DEFA 0%, rgba(251, 252, 219, 0.8) 100%);
 }
 
 .font-darkblue {
@@ -131,6 +131,40 @@
   background: #000048;
 }
 
+@media (min-width: 992px) {
+  header .navbar-nav .dropdown {
+    position: relative;
+  }
+  header .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  header .navbar-nav .dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 200px;
+    border: none;
+    box-shadow: 0 8px 24px rgba(40, 40, 40, 0.08);
+  }
+  header .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+  }
+  header .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+    background: rgb(247, 90.7346938776, 0);
+    color: #fff;
+  }
+}
 body {
   -webkit-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
@@ -183,11 +217,11 @@ p {
 }
 
 .primary-btn {
-  background: #ea9625;
+  background: #460100;
   color: #fff;
 }
 .primary-btn:hover {
-  background: rgb(223.9288702929, 137.6443514644, 21.5711297071);
+  background: rgb(44.5, 0.6357142857, 0);
 }
 
 .blue-btn {
@@ -236,7 +270,7 @@ header .nav-item .nav-link {
   font-size: 0.9rem;
 }
 header .nav-item .nav-link:hover {
-  color: #ea9625;
+  color: #460100;
 }
 @media (max-width: 996px) {
   header .nav-item .nav-link {
@@ -247,14 +281,14 @@ header .nav-item .nav-link:hover {
 header .nav-item .active-nav {
   display: block;
   padding: 0.5rem 1rem !important;
-  color: #ea9625;
+  color: #460100;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.9rem;
 }
 @media (max-width: 996px) {
   header .nav-item .active-nav {
-    background: #ea9625;
+    background: #460100;
     padding: 14px 15px !important;
     color: #fff;
   }
@@ -264,6 +298,37 @@ header .whatsappicon img {
 }
 header .offcanvas-title img {
   width: 250px;
+}
+@media (min-width: 992px) {
+  header header .navbar-nav .dropdown {
+    position: relative;
+  }
+  header header .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  header header .navbar-nav .dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 200px;
+    border: none;
+    box-shadow: 0 8px 24px rgba(40, 40, 40, 0.08);
+  }
+}
+@media (max-width: 991.98px) {
+  header header .navbar-nav .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    position: static;
+    box-shadow: none;
+  }
 }
 
 main {
