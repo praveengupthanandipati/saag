@@ -1,4 +1,17 @@
 
+// Ensure header class toggling works correctly
+$(function () {
+  const $header = $(".fixed-top");
+  function toggleHeaderClass() {
+    if ($(window).scrollTop() > 50) {
+      $header.addClass("fixed-top-nav");
+    } else {
+      $header.removeClass("fixed-top-nav");
+    }
+  }
+  $(window).on('scroll', toggleHeaderClass);
+  toggleHeaderClass(); // Run on page load
+});
 // Only handle mobile: remove styles on resize to mobile
 $(function () {
   function handleDropdownMobile() {
@@ -11,14 +24,6 @@ $(function () {
   $(window).on('resize', handleDropdownMobile);
 });
 
-//header add class
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 70) {
-    $(".fixed-top").addClass("fixed-top-nav");
-  } else {
-    $(".fixed-top").removeClass("fixed-top-nav");
-  }
-});
 
 //on click move to browser top
 $(document).ready(function () {

@@ -20,7 +20,7 @@
 
 //gradient
 @mixin linear-gradient($direction, $color-stops...) {
-  background: nth(nth($color-stops, 1), 1);
+  // background: nth(nth($color-stops, 1), 1);
   background: -webkit-linear-gradient(
     legacy-direction($direction),
     $color-stops
