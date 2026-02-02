@@ -537,4 +537,30 @@ header .offcanvas-title img {
 }
 .parentcourse-col:nth-child(4) .course-col:hover {
   background: #fff;
+}
+
+.getintouch-home {
+  background: url(../img/last-section-home-bg.jpg) no-repeat 0 0/cover;
+  padding: 170px 0;
+}
+
+footer {
+  padding: 6.5rem 0;
+}
+footer .footer-social a {
+  font-size: 1.2rem;
+  padding-right: 15px;
+  color: #828282;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+footer .footer-social a:hover {
+  color: #460100;
+}
+footer p, footer a {
+  font-size: 1.2rem;
+  color: #828282;
 }/*# sourceMappingURL=style.css.map */

@@ -463,3 +463,30 @@ header {
     }
   }  
 }
+
+.getintouch-home{
+  background: url(../img/last-section-home-bg.jpg) no-repeat 0 0 / cover;
+  padding:170px 0;
+}
+
+
+footer{
+  padding:6.5rem 0;
+
+  .footer-social{
+    a{
+      font-size:1.2rem;
+      padding-right:15px;
+      color:map-get($colors, gray);
+      @include transition(all, 0.3s ease);
+
+      &:hover{
+        color:map-get($colors, primary);
+      }
+    }
+  }
+  p, a{
+    font-size:1.2rem;
+    color:map-get($colors, gray);
+  }
+}
