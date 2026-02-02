@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="css/uicons-brands.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
     <!--/ styles -->
     <script>
         // Header: add or remove class on scroll
@@ -256,18 +257,72 @@
         </section>
 
         <!-- courses -->
-         <section class="home-courses section-spacing">
+        <section class="home-courses section-spacing">
             <div class="custom-container">
                 <div class="row">
                     <div class="col-lg-6">
-                          <div class="title-section">
-                                <h5 class="font-primary">Our Popular Masterclasses</h5>
-                                <h2 class="font-bold"><span class="font-primary">Learn the skills</span> that shape the creative industry today.</h2>
-                          </div>
+                        <div class="title-section">
+                            <h5 class="font-primary">Our Popular Masterclasses</h5>
+                            <h2 class="font-bold"><span class="font-primary">Learn the skills</span> that shape the creative industry today.</h2>
+                        </div>
                     </div>
                 </div>
+
+                <div class="row pt-4 pt-lg-5">
+                    <div class="col-lg-3 parentcourse-col">
+                        <div class="course-col p-3 p-lg-5">
+                            <a href="javascript:void(0)">
+                                <figure><i class="fi fi-ts-aperture"></i></figure>
+                                <article>
+                                    <h4>Professional Photography</h4>
+                                    <p class="p-0 m-0">Master camera, light, and composition to create compelling, professional-grade visual stories.</p>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 parentcourse-col">
+                        <div class="course-col p-3 p-lg-5">
+                            <a href="javascript:void(0)">
+                                <figure><i class="fi fi-ts-video-camera"></i></figure>
+                                <article>
+                                    <h4>Professional Videography & Editing</h4>
+                                    <p class="p-0 m-0">Master professional filming techniques and industry-standard software to produce polished, compelling video narratives.</p>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-3 parentcourse-col">
+                        <div class="course-col p-3 p-lg-5">
+                            <a href="javascript:void(0)">
+                                <figure><i class="fi fi-ts-mobile-hand"></i></figure>
+                                <article>
+                                    <h4>Smartphone Cinematography  & Content Creation</h4>
+                                    <p class="p-0 m-0">Transform your smartphone into a professional film studio. Master shooting, editing, and storytelling for digital platforms.</p>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-3 parentcourse-col">
+                        <div class="course-col p-3 p-lg-5">
+                            <a href="javascript:void(0)">
+                                <figure><i class="fi fi-ts-voice-command"></i></figure>
+                                <article>
+                                    <h4>Dubbing & Voice Recording</h4>
+                                    <p class="p-0 m-0">Professional voice recording, dubbing, and clean audio production for videos, podcasts, and multilingual projects.</p>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
             </div>
-         </section>
+        </section>
+
+       
+         
     </main>
 
     <!-- footer -->
