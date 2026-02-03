@@ -5,121 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saag</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/fav.png" />
-    <!-- styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/uicons-brands.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
-    <!--/ styles -->
-    <script>
-        // Header: add or remove class on scroll
-    </script>
+    <?php include 'includes/styles.php'; ?>
 </head>
 
-<body>
-
-    <!-- header -->
-    <div id="load"></div>
-    <!-- header-->
-    <header class="fixed-top">
-        <div class="custom-container">
-            <div class="navbar navbar-expand-xl py-0" aria-label="Offcanvas navbar large">
-                <a class="navbar-brand p-0 m-0" href="index.php">
-                    <img src="img/logo.svg" alt="b1 Onluine Trainings" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-                    aria-controls="offcanvasNavbar2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end justify-content-lg-end" tabindex="-1" id="offcanvasNavbar2"
-                    aria-labelledby="offcanvasNavbar2Label">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
-                            <img src="img/logo.png" alt="" />
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav m-auto cetnter-nav">
-                            <?php
-                            $current_page = basename($_SERVER['PHP_SELF']);
-                            function isActive($page, $current_page)
-                            {
-                                return ($page == $current_page) ? 'active-nav' : 'nav-link';
-                            }
-                            ?>
-                            <li class="nav-item">
-                                <a class="<?= isActive('index.php', $current_page) ?>" href="index.php">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="<?= isActive('about.php', $current_page) ?>" href="about.php">About Us</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Short-Term Courses</a></li>
-                                    <li><a class="dropdown-item" href="#">Long-Term Courses</a></li>
-                                    <li><a class="dropdown-item" href="#">Career Counselling</a></li>
-                                    <li><a class="dropdown-item" href="#">Entrance Preparation</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Production
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Print Media</a></li>
-                                    <li><a class="dropdown-item" href="#">VFX</a></li>
-                                    <li><a class="dropdown-item" href="#">Advertising & Digital Marketing</a></li>
-                                    <li><a class="dropdown-item" href="#">Rental Desk & Creative Workspace</a></li>
-                                    <li><a class="dropdown-item" href="#">Green Matte Studio & Dubbing Room</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="<?= isActive('contact.php', $current_page) ?>" href="contact.php">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="<?= isActive('contact.php', $current_page) ?>" href="contact.php">Admissions</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Courses
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Photography</a></li>
-                                    <li><a class="dropdown-item" href="#">Videography & Editing</a></li>
-                                    <li><a class="dropdown-item" href="#">Smartphone Cinematography</a></li>
-                                    <li><a class="dropdown-item" href="#"> Content Creation</a></li>
-                                    <li><a class="dropdown-item" href="#">Dubbing & Voice Recording</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=+919542520797&text=Hi"
-                                    class="whatsappicon">
-                                    <img src="img/whatsapp.png" alt="" />
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="primary-btn d-inline-block ms-2 text-uppercase" href="#"> Get Started</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-->
-
+<body>    
+    <?php include 'includes/header.php'; ?>
     <!-- main -->
     <main>
         <!-- hero section -->
@@ -334,47 +224,9 @@
             </div>
         </section>   
     </main>
-
     <!-- footer -->
-    <footer>
-        <section class="custom-container">
-            <div class="row">
-                <div class="col-md-6">
-                     <div class="title-section">                           
-                            <h2 class="font-bold"><span class="font-primary">We are always</span> happy to talk! </h2>
-                           <div class="footer-social">
-                             <a href="javascript:void(0)" target="_blank" class="font-bold">Facebook</a>
-                            <a href="javascript:void(0)" target="_blank" class="font-bold">Twitter</a>
-                            <a href="javascript:void(0)" target="_blank" class="font-bold">Instagram</a>
-                            <a href="javascript:void(0)" target="_blank" class="font-bold">Linkedin</a>
-                           </div>  
-                        </div>
-                </div>
-            </div>
-
-            <div class="row pt-3 pt-md-5">
-                <div class="col-md-4">
-                    <p class="font-semibold">Door no. 1-98/8/23/SSN/A/102, Sri Sai Estates, <br>Vital rao nagar, Madhapur, Hyderabad</p>
-                </div>
-                <div class="col-md-4">                    
-                    <p class="pb-0 m-0 font-semibold"><a href="call to:+91 95425 20797">+91 95425 20797</a></p>
-                    <p class="font-semibold"><a href="mailto:saaginfinitecreatives@gmail.com">saaginfinitecreatives@gmail.com</a></p>
-                </div>
-                <div class="col-md-4">
-                    <p class="font-semibold">© 2026 by Saag Infinite Creatives. </p>
-                </div>
-        </section>
-    </footer>
-    <!-- scripts -->
-    <!--[if lte IE 9]>
-      <script src="js/ie.lteIE9.js"></script>
-    <![endif]-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/custom.js"></script>
-    <!--/ scripts -->
+    <?php include 'includes/footer.php'; ?>
+    <?php include 'includes/scripts.php'; ?>
 </body>
 
 </body>
