@@ -11,6 +11,15 @@ $(function () {
   }
   $(window).on('scroll', toggleHeaderClass);
   toggleHeaderClass(); // Run on page load
+  
+  // Initialize AOS
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  }
 });
 // Only handle mobile: remove styles on resize to mobile
 $(function () {
