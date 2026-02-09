@@ -41,7 +41,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="shortterm-courses.php">Short-Term Courses</a></li>
                                 <li><a class="dropdown-item" href="longterm-coaching.php">Long-Term Coaching</a></li>
-                                <li><a class="dropdown-item" href="#">Career Counselling</a></li>
+                                <li><a class="dropdown-item" href="career-counselling.php">Career Counselling</a></li>
                                 <li><a class="dropdown-item" href="#">Entrance Preparation</a></li>
                             </ul>
                         </li>
