@@ -195,7 +195,7 @@ a {
 }
 
 .custom-container {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -792,4 +792,12 @@ footer .movetop i {
 
 .subpage-body {
   padding: 3rem 0;
+}
+
+.card-header-gradient {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  transition: all 0.3s ease;
+}
+.card-header-gradient:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
 }/*# sourceMappingURL=style.css.map */

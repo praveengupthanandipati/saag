@@ -42,7 +42,7 @@
                                 <li><a class="dropdown-item" href="shortterm-courses.php">Short-Term Courses</a></li>
                                 <li><a class="dropdown-item" href="longterm-coaching.php">Long-Term Coaching</a></li>
                                 <li><a class="dropdown-item" href="career-counselling.php">Career Counselling</a></li>
-                                <li><a class="dropdown-item" href="#">Entrance Preparation</a></li>
+                                <li><a class="dropdown-item" href="entrance-preparation.php">Entrance Preparation</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -51,7 +51,7 @@
                                 Production
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Print Media</a></li>
+                                <li><a class="dropdown-item" href="print-media.php">Print Media</a></li>
                                 <li><a class="dropdown-item" href="#">VFX</a></li>
                                 <li><a class="dropdown-item" href="#">Advertising & Digital Marketing</a></li>
                                 <li><a class="dropdown-item" href="#">Rental Desk & Creative Workspace</a></li>
