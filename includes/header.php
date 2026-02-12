@@ -52,7 +52,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="print-media.php">Print Media</a></li>
-                                <li><a class="dropdown-item" href="#">VFX</a></li>
+                                <li><a class="dropdown-item" href="visual-effects.php">Visual Effects</a></li>
                                 <li><a class="dropdown-item" href="#">Advertising & Digital Marketing</a></li>
                                 <li><a class="dropdown-item" href="#">Rental Desk & Creative Workspace</a></li>
                                 <li><a class="dropdown-item" href="#">Green Matte Studio & Dubbing Room</a></li>
