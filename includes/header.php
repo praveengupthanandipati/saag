@@ -53,9 +53,9 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="print-media.php">Print Media</a></li>
                                 <li><a class="dropdown-item" href="visual-effects.php">Visual Effects</a></li>
-                                <li><a class="dropdown-item" href="#">Advertising & Digital Marketing</a></li>
-                                <li><a class="dropdown-item" href="#">Rental Desk & Creative Workspace</a></li>
-                                <li><a class="dropdown-item" href="#">Green Matte Studio & Dubbing Room</a></li>
+                                <li><a class="dropdown-item" href="advertising.php">Advertising & Digital Marketing</a></li>
+                                <li><a class="dropdown-item" href="rental-desk.php">Rental Desk & Creative Workspace</a></li>
+                                <li><a class="dropdown-item" href="green-matte.php">Green Matte Studio & Dubbing Room</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
