@@ -59,10 +59,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= isActive('contact.php', $current_page) ?>" href="contact.php">Careers</a>
+                            <a class="<?= isActive('careers.php', $current_page) ?>" href="careers.php">Careers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= isActive('contact.php', $current_page) ?>" href="contact.php">Admissions</a>
+                            <a class="<?= isActive('admissions.php', $current_page) ?>" href="admissions.php">Admissions</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -70,7 +70,7 @@
                                 Courses
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Photography</a></li>
+                                <li><a class="dropdown-item" href="photography.php">Photography</a></li>
                                 <li><a class="dropdown-item" href="#">Videography & Editing</a></li>
                                 <li><a class="dropdown-item" href="#">Smartphone Cinematography</a></li>
                                 <li><a class="dropdown-item" href="#"> Content Creation</a></li>
