@@ -71,10 +71,10 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="photography.php">Photography</a></li>
-                                <li><a class="dropdown-item" href="#">Videography & Editing</a></li>
-                                <li><a class="dropdown-item" href="#">Smartphone Cinematography</a></li>
-                                <li><a class="dropdown-item" href="#"> Content Creation</a></li>
-                                <li><a class="dropdown-item" href="#">Dubbing & Voice Recording</a></li>
+                                <li><a class="dropdown-item" href="videography.php">Videography & Editing</a></li>
+                                <li><a class="dropdown-item" href="smartphone.php">Smartphone Cinematography</a></li>
+                                <li><a class="dropdown-item" href="content-creation.php"> Content Creation</a></li>
+                                <li><a class="dropdown-item" href="dubbing-voice-recording.php">Dubbing & Voice Recording</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -86,7 +86,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="primary-btn d-inline-block ms-2 text-uppercase" href="#"> Get Started</a>
+                            <a class="primary-btn d-inline-block ms-2 text-uppercase" href="contact.php"> Contact</a>
                         </li>
                     </ul>
                 </div>
